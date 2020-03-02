@@ -1,0 +1,23 @@
+{
+  "name": "json-api-sample",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/acidtone/json-api-sample.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/acidtone/json-api-sample/issues"
+  },
+  "homepage": "https://github.com/acidtone/json-api-sample#readme",
+  "dependencies": {
+    "express": "^4.17.1"
+  }
+}
