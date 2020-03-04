@@ -7,8 +7,9 @@
   },
   "main": "app.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "node app.js"
+    "start": "node app.js",
+    "build": "./build.sh",
+    "dev": "nodemon app.js"
   },
   "repository": {
     "type": "git",
@@ -22,6 +23,11 @@
   },
   "homepage": "https://github.com/acidtone/json-api-sample#readme",
   "dependencies": {
+    "dotenv": "^8.2.0",
+    "ejs": "^3.0.1",
     "express": "^4.17.1"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.2"
   }
 }

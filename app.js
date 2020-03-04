@@ -3,9 +3,17 @@ const express = require('express');
 const definitions = require('./definitions.js');
 
 const app = express();
+app.set('view engine','ejs');
 
 app.get('/api/v1/definitions', function(request, response){
   response.json(definitions);
+})
+app.get('/api/v1/definitions/:slug', function(request, response){
+  response.json(definitions);
+})
+
+app.get('/',function(request,response) {
+  response.render('index',{});
 })
 
 app.use(express.static(path.join(__dirname, 'public')));

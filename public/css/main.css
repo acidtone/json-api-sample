@@ -1,0 +1,16 @@
+/* Centre a single element vertically and horizontally on a page */
+.center-child {
+  min-height: 100vh;
+  display: flex;
+}
+.center-child > * {
+  margin: auto;
+}
+
+.center-inside {
+  text-align: center;
+}
+
+.text-box {
+  max-width: 80ch;
+}
