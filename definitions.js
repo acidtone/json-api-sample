@@ -73,5 +73,15 @@ module.exports = [
     term:'First-class Function',
     definition: 'Everything you can do with other types, you can do with functions.',
     slug: 'first-class-function'
+  },
+  {
+    term: 'Callback',
+    definition: 'A function passed to another function , which we assume will be invoked at some point.',
+    slug: 'callback'
+  },
+  {
+    term: 'Error-first Callback',
+    definition: 'Callbacks that take an error object as their first parameter. `null` if no error, otherwise this will be an object containing our error.',
+    slug: 'error-first-callback'
   }
 ]
