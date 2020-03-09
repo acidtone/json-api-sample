@@ -1,6 +1,7 @@
 const path = require('path');
 const express = require('express');
 const mongoose = require('mongoose');
+const cors = require('cors');
 const dotenv = require('dotenv').config();
 var slugify = require('slugify')
 
@@ -12,6 +13,12 @@ const Gallery = require('./models/gallery.js');
 const app = express();
 app.set('view engine','ejs');
 app.use(express.urlencoded({ extended: false }));
+
+corsOptions = {
+  origin: "https://wbdv-api-json.herokuapp.com",
+  optionsSuccessStatus: 200 // some legacy browsers (IE11, various SmartTVs) choke on 204
+};
+app.use(cors(corsOptions));
 
 // Set up a pending connection to the database
 // See: https://mongoosejs.com/docs/

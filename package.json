@@ -22,6 +22,7 @@
   },
   "homepage": "https://github.com/acidtone/json-api-sample#readme",
   "dependencies": {
+    "cors": "^2.8.5",
     "dotenv": "^8.2.0",
     "ejs": "^3.0.1",
     "express": "^4.17.1",
