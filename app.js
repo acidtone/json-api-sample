@@ -3,11 +3,11 @@ const express = require('express');
 const mongoose = require('mongoose');
 const dotenv = require('dotenv').config();
 var slugify = require('slugify')
-const definitions = require('./definitions.js');
 
 // Define our Definition model.
 // See `./models/definitions.js` for details
 const Definition = require('./models/definitions.js');
+const Gallery = require('./models/gallery.js');
 
 const app = express();
 app.set('view engine','ejs');
@@ -35,6 +35,12 @@ db.once('open', function() {
 
 app.get('/api/v1/definitions', function(request, response){
   Definition.find(function(error, result) { 
+    response.json(result);
+  });
+});
+
+app.get('/api/v1/gallery', function(request, response){
+  Gallery.find(function(error, result) { 
     response.json(result);
   });
 });
