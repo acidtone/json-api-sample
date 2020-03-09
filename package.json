@@ -22,11 +22,11 @@
   },
   "homepage": "https://github.com/acidtone/json-api-sample#readme",
   "dependencies": {
-    "bcrypt": "^4.0.1",
     "dotenv": "^8.2.0",
     "ejs": "^3.0.1",
     "express": "^4.17.1",
-    "mongoose": "^5.9.3"
+    "mongoose": "^5.9.3",
+    "slugify": "^1.4.0"
   },
   "devDependencies": {
     "nodemon": "^2.0.2"
