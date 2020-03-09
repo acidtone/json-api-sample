@@ -1,3 +1,4 @@
+console.log(`${window.location.href}api/v1/definitions`);
 fetch(`${window.location.href}api/v1/definitions`)
 .then((response) => {
   return response.json();
