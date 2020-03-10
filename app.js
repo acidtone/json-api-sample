@@ -25,7 +25,8 @@ app.use(cors(corsOptions));
 const dbURI = process.env.MONGODB_URL;
 mongoose.connect(dbURI, {
   useUnifiedTopology: true,
-  useNewUrlParser: true
+  useNewUrlParser: true,
+  dbName: "glossary"
 });
 
 // Connect to database. Mongoose handles the asynchonous aspects internally so we don't have to.
