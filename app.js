@@ -14,12 +14,6 @@ const app = express();
 app.set('view engine','ejs');
 app.use(express.urlencoded({ extended: false }));
 
-corsOptions = {
-  origin: "https://wbdv-api-json.herokuapp.com",
-  optionsSuccessStatus: 200 // some legacy browsers (IE11, various SmartTVs) choke on 204
-};
-app.use(cors(corsOptions));
-
 // Set up a pending connection to the database
 // See: https://mongoosejs.com/docs/
 const dbURI = process.env.MONGODB_URL;
